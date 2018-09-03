@@ -29,6 +29,9 @@ twitterUsername:
 dribbbleUsername:
 codepenUsername:
 
+# Images
+logo: "/assets/img/logo/color/openbases-shapes-color.png"
+
 # Build settings
 markdown: kramdown
 
