@@ -1,0 +1,8 @@
+---
+layout: null
+---
+{
+    "docs": [
+        {% for page in site.pages %}{"location": "{{ page.url }}",
+        "text": {{ page.content | markdownify | jsonify }},
+        "title": "{{ page.title }}"}{% if forloop.last %}]{% else %},{% endif %}{% endfor %}}
