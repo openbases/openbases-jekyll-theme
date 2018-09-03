@@ -20,14 +20,13 @@ description: > # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/openbases-jekyll-theme" # the subpath of your site, e.g. /blog
 url: "http://example.com" # the base hostname & protocol for your site
 
 # Social
-githubUsername:
-twitterUsername:
-dribbbleUsername:
-codepenUsername:
+repo: "https://github.com/openbases/openbases-jekyll-theme/"
+github_user: "openbases"
+github_repo: "openbases-jekyll-theme/"
 
 # Images
 logo: "/assets/img/logo/color/openbases-shapes-color.png"
@@ -43,5 +42,3 @@ permalink: /:year/:month/:title
 markdown: kramdown
 include: [_pages]
 exclude: [_site, CHANGELOG.md, LICENSE, README.md]
-sass:
-  style: compressed

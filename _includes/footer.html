@@ -1,13 +1,5 @@
 <footer class="c-footer md-footer-nav">
   <div class="u-container c-footer__container">
-    <p>&copy; {{ site.title }} {{ site.time | date: '%Y' }}</p>
-    <p>
-      {% if site.twitterUsername %}<a href="https://twitter.com/{{ site.twitterUsername }}">Twitter</a>{% endif %}
-      {% if site.githubUsername %}<a href="https://github.com/{{ site.githubUsername }}">Github</a>{% endif %}
-      {% if site.dribbbleUsername %}<a href="https://dribbble.com/{{ site.dribbbleUsername }}">Dribbble</a>{% endif %}
-      {% if site.codepenUsername %}<a href="http://codepen.io/{{ site.codepenUsername }}">CodePen</a>{% endif %}
-    </p>
-
     <nav class="md-footer-nav__inner md-grid">
           <a href="bases/" title="Bases" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
@@ -30,14 +22,8 @@
       <div class="md-footer-copyright">
         
           <div class="md-footer-copyright__highlight">
-            Copyright &copy; 2018 - Vanessa Sochat and OpenBases Maintainers
-          </div>
-        
-        powered by
-        <a href="https://www.mkdocs.org">MkDocs</a>
-        and
-        <a href="https://squidfunk.github.io/mkdocs-material/">
-          Material for MkDocs</a>
+            Copyright &copy; 2018 - {{ site.author }}
+          </div>        
       </div>
       
         
@@ -56,6 +42,6 @@
 
 </footer>
 
-<script src="/assets/js/application.a59e2a89.js"></script>
+<script src="{{ site.baseurl }}/assets/js/application.a59e2a89.js"></script>
 <script>app.initialize({version:"0.17.4",url:{base:"."}})</script>      
-<script src="/assets/js/extra.js"></script>
+<script src="{{ site.baseurl }}/assets/js/extra.js"></script>
