@@ -29,10 +29,15 @@ cd docs
 
 You likely will want to use this theme to build directly on Github Pages for your
 [Open Bases](https://openbases.github.io) component. This means editing the 
-[_config.yml](_config.yml) and documentation in the [pages](pages) folder 
-as appropriate.
+[_config.yml](_config.yml) and documentation in the [_pages](_pages) folder 
+as appropriate. You define urls based on the `permalink` attribute in your pages,
+and then add them to the navigation by adding to the content of [_data/toc.myl](_data/toc.yml).
+
 
 ### 3. Options
+
+Most of the configuration values in the [_config.yml](_config.yml) are self explanatory,
+but we can describe a few here if it's helpful.
 
 + Theme
  - Green
@@ -44,7 +49,7 @@ as appropriate.
   - True
   - False
 
-### N. Serve
+### 4. Serve
 
 Depending on how you installed jekyll:
 
